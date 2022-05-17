@@ -22,7 +22,7 @@ Pod::Spec.new do |s|
   s.requires_arc = false
   s.source       = { :git => "https://github.com/liuqiaohong0515/libffmpeg-ios", :tag => "#{s.version}" }
 
-  s.ios.deployment_target = '9.0'
+  s.ios.deployment_target = '11.0'
 
   s.ios.preserve_paths = "src/ios/#{s.version}/include"
   s.ios.header_mappings_dir = "src/ios/#{s.version}/include"
@@ -85,6 +85,6 @@ Pod::Spec.new do |s|
 
   s.library    = "iconv", "lzma", "bz2", "z"
   s.frameworks = ["VideoToolbox", "AudioToolbox", 'AVFoundation']
-  s.dependency   "openssl"
+  # s.dependency   "openssl"
 
 end
